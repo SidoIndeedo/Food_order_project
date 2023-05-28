@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    *{
+      margin:0%;
+      padding: 0;
+      box-sizing:border-box ;
+      font-family: 'Roboto','sans-serif';
+    }
+    /*for background color*/
+    .home{
+      min-height:100vh;
+      background:linear-gradient(rgba(24,227,119,0.8),rgba(153,153,216,0.8));
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   /*for heading content*/
+   nav{
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      background: rgba(12,11,9,0.2);
+      color:#fff;
+      padding: 10px 150px;
+   }
+   nav .logo h1{
+      text-transform:uppercase;
+      color:#CDA45E;
+      font-size: 24px;
+
+   }
+   /*for dine with us*/
+   nav .logo h1 span{
+      color:#fff;
+      font-family: 'Dancing Script',cursive;
+      font-size: 24px;
+      text-transform: lowercase;
+   }
+   /*for heading settings like home,veg*/
+   nav ul{
+      display: flex;
+   }
+   nav ul li{
+      list-style:none;
+      padding: 15px;px;
+   }
+   nav ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      transition: 0.4sec;
+   }
+   nav ul li a:hover{
+      color:#CDA45E;
+   }
+   /* heading below home,veg*/
+   .banner{
+      display:flex;
+      flex-direction: column;
+      padding:2%;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      min-height: 80vh;
+      margin-top:-90px;
+   }
+   /* for heading color*/
+   .banner h2{
+      color:#fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      border: 1px solid rgba(75, 83, 9, 0.975);
+      border-radius: 10px;
+      padding:10px;
+      font-size: 30px;
+   }
+   .banner h2 span{
+      color:#CDA45E;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 35px;
+   }
+   .banner h3{
+      color:#fff;
+      font-family: 'Dancing Script', cursive;
+      padding:20px;
+      font-weight: 500px;
+      font-size:28px;
+      font-family:'Dancing Script', cursive;
+   }
+   /* for today's special setting*/
+   .special h1{
+      background-color: #CDA45E;
+      color:#292929;
+      padding:10px;
+      margin: -50px;
+      font-size:15px;
+      word-spacing: 5px;
+      text-transform: uppercase;
+      position:absolute;
+      left:748px;
+      top:390px;
+
+
+   }
+   /* box ki setting krne ke liye*/
+   .special .special-box{
+      height:220px;
+      width:160px;
+      background:rgba(0,0,0,0.5);
+      margin-top:-150px;
+      border-top-right-radius:100px;
+      border-top-left-radius:100px;
+      border:2px solid #CDA45E;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+   }
+   /*tittle for non veg food*/
+   .special-box h2{
+      color:#CDA45E; 
+      font-size:16px;
+      font-weight:300;
+      padding:10px;
+      text-transform:capitalize;
+
+   }
+   .special-box h3{
+      color:#fff; 
+      font-size:18px;
+      font-weight:900;
+      padding:5px;
+   }
+   /*food title price boxes ke bich mein gap dene ke liye*/
+
+   .special{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:20px;
+   }
+   /*non veg images*/
+   .special-box img{
+     height:100px;
+     width:100px;
+     border-radius: 50%;
+     object-fit:cover;
+     border:5px solid #CDA45E;
+   }
+
+  </style>
+</head>
+<body>
+     <section class="home" id="home">
+      <nav>
+         <div class="logo">
+            <h1>Dine<span> with us</span></h1>
+         </div>
+         <ul>
+          <li><a href="#home">Today's Special</a></li>
+          <li><a href="veg.html">Veg</a></li>
+          <li><a href="non-veg.html">Non-veg</a></li>
+          <li><a href="">icecream</a></li>
+          <li><a href="">Milksahkes</a></li>
+          <li><a href="contact Us.html">Contact</a></li>
+         </ul>
+      </nav>
+      <div class="banner">
+        <h2>Welcome to <span>Food Village with us</span> </h2>
+        <h3>Delivering delicious food in the city</h3>
+      </div>
+      <div class="special">
+         <h1>Today's special</h1>
+         <div class="special-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zOy8EScq8weLgZBSbpW_Ig7IYyTJTpHqiw&usqp=CAU">
+            <h2>Chicken Kabab</h2>
+            <h3>Rs.250</h3>
+         </div>
+         <div class="special-box">
+            <img src="https://wholefoodsoulfoodkitchen.com/wp-content/uploads/2022/04/chocolate-milkshake-no-ice-cream-2.jpg">
+            <h2>Milksahkes</h2>
+            <h3>Rs.130</h3>
+         </div>
+         <div class="special-box">
+            <img src="https://www.healthifyme.com/blog/wp-content/uploads/2022/06/shutterstock_1768583060-1.jpg">
+            <h2>Blueberry Icecream</h2>
+            <h3>Rs.110</h3>
+         </div>
+      </div>
+     </section>
+</body>
+</html>

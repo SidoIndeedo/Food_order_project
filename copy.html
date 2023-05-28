@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Foods</title>
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+       *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family:'roboto',sans-serif;  
+       }
+       /* Header section*/
+       .food{
+        min-height: 100vh;
+        background: linear-gradient(rgba(24,227,119,0.8),rgba(153,153,216,0.8));
+        background-size:cover;
+        background-attachment: fixed;
+    }
+    /* header background*/
+    header{
+        background: rgba(0,0, 0, 0.3);
+        height: 150px;
+    }
+    /* for vegiterian food heading*/
+    header h1{
+        color:#fff;
+        letter-spacing: 3px;
+        text-align:center;
+        padding: 30px 0 20px 0;
+        text-transform: uppercase;
+    }  
+    /* for sections*/ 
+    header nav{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin:-20px;
+    }
+    /* to make the sections in line*/
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        list-style: none;
+        padding:10px;
+    }
+    header nav ul li a i
+    {
+        margin-left: 10px;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color:#fff;
+        text-transform: uppercase;
+        font-size:13px;
+        font-weight:600px;
+        transition: 0.4s ease-in;
+    }
+    .btn-add-cart{
+        padding:5px 30px;
+        margin-left: 30px;
+        border-:4px; 
+        border-radius: 3px;
+        outline:0;
+        background-color:#CDA45E;
+        color: #292929;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.4s ease-in;
+    }
+    .btn-cart{
+        padding:5px 30px;
+        margin-left: 30px;
+        border-:4px; 
+        color:#CDA45E;
+        background-color: transparent;
+        border:2px solid #CDA45E;
+        border-radius: 3px;
+        outline:0;
+        background-color:#CDA45E;
+        color: #292929;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.4s ease-in;
+    }
+    .btn-cart:hover{
+        color:#292929;
+        background-color: #CDA45E;
+    }
+    .cart i{
+        margin-left: 9px;
+    }
+    /* when the cursor goes on the content*/
+    header nav ul li a:hover{
+      color:#CDA45E;
+    }
+    /* food section*/
+
+    /* add to cart settings*/
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
+        padding: 50px;
+        margin: 50px;
+        /* to place border around the items*/
+        
+    }
+    .container .food-box{
+        height: 250px;
+        width: 160px;
+        margin: 40px;
+        background: rgba(0,0,0,0.55);
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border: 2px solid #CDA45E;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* image setting*/
+    .container .food-box img{
+        height: 90px;
+        width: 90px;
+        background: #ddd;
+        border-radius: 50%;
+        object-fit:cover;
+        padding: 5px;
+    }
+    .container .food-box img:hover{
+        transform: scale(1.2);
+    }
+    .container .food-box h2{
+        color:#CDA45E;
+        font-size: 18px;
+        font-weight:500px;
+        text-transform:uppercase ;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    /* rupee settings*/
+    .container .food-box h3{
+        color:#fff;
+        font-size: 14px;
+        font-weight:500px;
+        text-transform:uppercase ;
+        padding: 10px;
+    }
+    .container .food-box .cart{
+        padding:3px 10px;
+        margin: 10px;
+        border: 2px solid #CDA45E;
+        outline:0;
+        background-color: transparent;
+        color: #CDA45E;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 600px;
+        transition: 0.3s ease-in;
+        cursor: pointer;
+    }
+    /* for transition effect in add to cart*/
+    .container .food-box .cart:hover{
+        color: #292929;
+        background-color:#CDA45E
+    }
+
+        </style>
+</head>
+<body>
+    <section class="food">
+        <header>
+           <h1>Vegeterian Foods</h1>
+           <nav>
+              <ul>
+                 <li><a href="assign1.html">Today's Special</a></li>
+                 <li><a href="">Non-Veg</a></li>
+                 <li><a href="">Ice-cream</a></li>
+                 <li><a href="">Milkshakes</a></li>
+                 <li><a href="">Contact</a></li>
+                 <button class="btn-cart">Cart<i class="fa fa-cart-plus" id="cart-icon"></i>
+                </button>
+              </ul>
+           </nav>
+        </header>
+
+        <div class="container">
+            <div class="food-box">
+                <img src="https://st.depositphotos.com/1692343/5094/i/950/depositphotos_50945415-stock-photo-healthy-homemade-fried-rice.jpg" class="food.img">
+                <h2 class="food-title">Fried Rice</h2>
+                <h3 class="food-price">Rs.150.00</h3>
+                <button class="cart">
+                    Add to Cart
+                </button>
+        </div>
+
+        <div class="food-box">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/07/curd-rice-2.jpg">
+            <h2 class="food-title">Curd Rice</h2>
+            <h3 class="food-price">Rs.120.00</h3>
+            <button class="cart">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food-box">
+        <img src="https://www.ticklingpalates.com/wp-content/uploads/2020/09/chilli-paneer-recipe.jpg">
+        <h2 class="food-title">Chilli Paneer</h2>
+        <h3 class="food-price">Rs.100.00</h3>
+        <button class="cart">
+            Add to Cart
+        </button>
+        </div>
+
+        <div class="food-box">
+        <img src="https://www.indianveggiedelight.com/wp-content/uploads/2020/03/cilantro-lime-rice-instant-pot-featured.jpg">
+        <h2 class="food-title">Cilantroline</h2>
+        <h3 class="food-price">Rs.85.00</h3>
+        <button class="cart">
+            Add to Cart
+        </button>
+        </div>
+
+        <div class="food-box">
+            <img src="https://imgk.timesnownews.com/story/veg-thali.gif">
+            <h2 class="food-title">Veg Thalli</h2>
+            <h3 class="food-price">Rs.70.00</h3>
+            <button class="cart">
+                Add to Cart
+            </button>
+    </div>
+
+    <div class="food-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bambayya_Pav_bhaji.jpg">
+        <h2 class="food-title">Pao Bhaji</h2>
+        <h3 class="food-price">Rs.60.00</h3>
+        <button class="cart">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="food-box">
+    <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg">
+    <h2 class="food-title">Masala Dosa</h2>
+    <h3 class="food-price">Rs.110.00</h3>
+    <button class="cart">
+        Add to Cart
+    </button>
+    </div>
+
+    <div class="food-box">
+    <img src="https://i.ytimg.com/vi/H3tW-UFSojU/maxresdefault.jpg" class="food.img">
+    <h2 class="food-title">Butter Naan</h2>
+    <h3 class="food-price">Rs.30.00</h3>
+    <button class="cart">
+        Add to Cart
+    </button>
+    </div>
+
+    <div class="food-box">
+        <img src="https://i0.wp.com/www.indianrecipeinfo.com/wp-content/uploads/2011/12/Tandoori-Roti.jpg" class="food.img">
+        <h2 class="food-title">Tandoori Roti</h2>
+        <h3 class="food-price">Rs.20.00</h3>
+        <button class="cart">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="food-box">
+    <img src="https://cookwithsan.com/wp-content/uploads/2022/08/punjabi-rajma-masala.png" class="food.img">
+    <h2 class="food-title">Rajma</h2>
+    <h3 class="food-price">Rs.55.00</h3>
+    <button class="cart">
+        Add to Cart
+    </button>
+    </div>
+
+        </div>
+     </section>
+</body>
+</html>
